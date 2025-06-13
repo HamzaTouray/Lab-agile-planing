@@ -1,7 +1,6 @@
 import streamlit as st
 import pandas as pd
 from datetime import datetime, timedelta
-from fpdf import FPDF
 import os
 from openai import OpenAI
 
