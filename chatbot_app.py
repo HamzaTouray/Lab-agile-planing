@@ -1,12 +1,14 @@
 import streamlit as st
 import pandas as pd
 from datetime import datetime, timedelta
+import openai
 
 
 # ---------------------
 # 🔐 Load OpenAI Client
 # ---------------------
-client = OpenAI(api_key=st.secrets["OPENAI_API_KEY"])
+openai.api_key = st.secrets["OPENAI_API_KEY"]
+
 
 # ---------------------
 # 📂 Load Data
